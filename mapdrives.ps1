@@ -1,8 +1,9 @@
-# Apply network drive mappings based on Group
+# Apply network drive mappings based on group, meant to be used with an active directory GPO.
 # Copyright (c) 2015 Dion Mitchell
 # License Apache 2.0
 
 # information for users, drives to map and network share path are stored here
+
 $driveMappings = @{
         'Technicians' = @{'path' = '\\svr.home.lan\techs'; 'letter' = 'T:' };
         'Directors' = @{'path' = '\\svr.home.lan\dirs'; 'letter' = 'B:' }
